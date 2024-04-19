@@ -1,0 +1,60 @@
+.home {
+  padding: 40px;
+  .container {
+    .info-area {
+      h1 {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+    }
+    .result-area {
+      margin-top: 4rem;
+      h1 {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+      .bold {
+        font-weight: 500;
+      }
+      .comparison {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+        .cv,
+        .jd {
+          flex: 0 1 50%;
+          font-size: 14px;
+          line-height: 1.5;
+          h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .container {
+      .info-area {
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+      .result-area {
+        h1 {
+          font-size: 1.5rem;
+        }
+        .comparison {
+          flex-direction: column;
+          .cv,
+          .jd {
+            flex: 0 1 100%;
+          }
+        }
+      }
+    }
+  }
+}
